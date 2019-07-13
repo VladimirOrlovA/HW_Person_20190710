@@ -22,7 +22,16 @@ namespace HW_Person_20190710
             Console.WriteLine("ИНН \t\t" + first.Inn);
             Console.WriteLine("Возраст \t" + first.Age());
 
-            Console.ReadKey();
+            ClassPerson second = new ClassPerson(new DateTime(1860, 01, 29), 20456885556);
+            second.FirstName = "Антон";
+            second.LastName = "Чехов";
+            second.MiddleName = "Павлович";
+
+            first.InfoPerson();
+            second.InfoPerson();
+
+  Console.ReadKey();
+
 
         }
     }

@@ -35,6 +35,15 @@ namespace HW_Person_20190710
             return base.ToString();
         }
 
+        public void InfoPerson()
+        {
+            Console.WriteLine("\n----------------- Информация о человеке -----------------\n\n");
+            Console.WriteLine("ФИО полностью ----- " + GetLFM());
+            Console.WriteLine("Дата рождения ----- " + Birthday);
+            Console.WriteLine("Возраст ----------- " + Age());
+            Console.WriteLine("ИНН --------------- " + Inn);
+            Console.WriteLine("\n---------------------------------------------------------\n\n");
+        }
         
         // Возвращает строку с полным ФИО
         public string GetLFM()
