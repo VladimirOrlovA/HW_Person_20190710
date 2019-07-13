@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace HW_Person_20190710
 {
-    class ClassPerson
+    class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
         public DateTime Birthday { get; }
         public long Inn { get; }
-
-        public ClassPerson(DateTime birthday, long inn)
+       
+        public Person(DateTime birthday, long inn)
         {
             this.Birthday = birthday;
             this.Inn = inn;
