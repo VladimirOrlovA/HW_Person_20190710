@@ -10,28 +10,30 @@ namespace HW_Person_20190710
     {
         static void Main(string[] args)
         {
-            Person first = new Person(new DateTime(1980, 07, 16), 20660716888);
-            first.FirstName = "Владимир";
-            first.LastName = "Орлов";
-            first.MiddleName = "Александрович";
+            //Person first = new Person(new DateTime(1980, 07, 16), 20660716888);
+            //first.FirstName = "Владимир";
+            //first.LastName = "Орлов";
+            //first.MiddleName = "Александрович";
 
-            Console.WriteLine("ФИО полностью \t" + first.GetLFM() + "\n");
-            Console.WriteLine("Фамилия и И.О. \t" + first.GetLastNameAndFM() + "\n\n");
+            //Console.WriteLine("ФИО полностью \t" + first.GetLFM() + "\n");
+            //Console.WriteLine("Фамилия и И.О. \t" + first.GetLastNameAndFM() + "\n\n");
 
-            Console.WriteLine("Дата рождения \t" + first.Birthday.ToShortDateString());
-            Console.WriteLine("ИНН \t\t" + first.Inn);
-            Console.WriteLine("Возраст \t" + first.Age());
+            //Console.WriteLine("Дата рождения \t" + first.Birthday.ToShortDateString());
+            //Console.WriteLine("ИНН \t\t" + first.Inn);
+            //Console.WriteLine("Возраст \t" + first.Age());
 
-            Person second = new Person(new DateTime(1860, 01, 29), 20456885556);
-            second.FirstName = "Антон";
-            second.LastName = "Чехов";
-            second.MiddleName = "Павлович";
+            //Person second = new Person(new DateTime(1860, 01, 29), 20456885556);
+            //second.FirstName = "Антон";
+            //second.LastName = "Чехов";
+            //second.MiddleName = "Павлович";
             
-            first.InfoPerson();
-            second.InfoPerson();
+            //first.InfoPerson();
+            //second.InfoPerson();
 
             Worker fw = new Worker(new DateTime(1980, 07, 16), 20660716888, new DateTime(2019, 07, 15), "developer", 5000);
-
+            fw.FirstName = "Владимир";
+            fw.LastName = "Орлов";
+            fw.MiddleName = "Александрович";
             fw.InfoWorker();
 
             Console.ReadKey();

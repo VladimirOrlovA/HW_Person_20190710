@@ -37,11 +37,11 @@ namespace HW_Person_20190710
 
         public void InfoWorker()
         {
-            Console.WriteLine("\n----------------- Информация о человеке -----------------\n\n");
-            Console.WriteLine("ФИО полностью ----- " + GetLFM());
-            Console.WriteLine("Дата рождения ----- " + Birthday);
-            Console.WriteLine("Возраст ----------- " + Age());
-            Console.WriteLine("ИНН --------------- " + Inn);
+            Console.WriteLine("\n----------------- Информация о работнике -----------------\n\n");
+            InfoPerson();
+            Console.WriteLine("Дата приема на работу ----- " + employmentDate);
+            Console.WriteLine("Должность ----------------- " + position);
+            Console.WriteLine("Оклад --------------------- " + solary);
             Console.WriteLine("\n---------------------------------------------------------\n\n");
         }
     }
