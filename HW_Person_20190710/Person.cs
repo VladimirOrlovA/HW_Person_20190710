@@ -37,7 +37,7 @@ namespace HW_Person_20190710
 
         public void InfoPerson()
         {
-            Console.WriteLine("\n----------------- Информация о человеке -----------------\n\n");
+            //Console.WriteLine("\n----------------- Информация о человеке -----------------\n\n");
             Console.WriteLine("ФИО полностью ----- " + GetLFM());
             Console.WriteLine("Дата рождения ----- " + Birthday);
             Console.WriteLine("Возраст ----------- " + Age());
